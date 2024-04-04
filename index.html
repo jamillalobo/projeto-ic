@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header></header>
     <main>
         <section class="historia">
-            <h1>Sistema Binario</h1>
+
+            <h1 class="historia__title">Sistema Binário</h1>
+            <div class="historia__informacao">
+                <p class="historia__p">Sistema usado para linguagem de máquina. Se faz necessário usar código binário,
+                    que é composto por apenas
+                    dois números, 0 e 1, ele representa todos os caracteres, incluindo letras, caracteres especiais e
+                    números. Essa limitação numérica reflete a natureza binária dos computadores, que interpretam apenas
+                    a
+                    presença ou ausência de energia.</p>
+                <p class="historia__p">Para processar informações, os valores do código binário representam dados. Um
+                    único ou 1 é chamado de
+                    bit, a menor unidade de informação do computador. Um conjunto de 8 bits forma um byte, que é usado
+                    para
+                    armazenar e transmitir dados de maneira mais eficiente. Existem unidades maiores de armazenamento,
+                    como
+                    o kilobyte (KB), megabyte (MB), gigabyte (GB) e terabyte (TB), cada uma sendo um múltiplo de bytes.
+                </p>
+            </div>
+            <div class="historia__trilha__tracejado">
+                <img src="./assets/trilha_historia.png" alt="">
+            </div>
+            <div class="historia__trilha">
+
+                <div class="historia__marcos" id="marco1">
+                    <h2 class="historia__titlemarcos">III A.C.</h2>
+                    <p class="historia__pmarcos">Pingalo descreveu um sistema numérico binário, representando os
+                        números
+                        de 1 a 8 apenas com os
+                        digitos 0 e 1.</p>
+                </div>
+                <div class="historia__marcos" id="marco2">
+                    <h2 class="historia__titlemarcos">Século XVIII</h2>
+                    <p class="historia__pmarcos">O sistema numérico binário moderno foi documentado pela primeira
+                        vez
+                        por Gottfried Leibniz.</p>
+                </div>
+                <div class="historia__marcos" id="marco3">
+                    <h2 class="historia__titlemarcos">1854</h2>
+                    <p class="historia__pmarcos">George Boole criou a Álgebra Booleana, que processa sinais usando
+                        ematemática, crucial na
+                        aplicação do sistema binário em circuitos eletrônicos.</p>
+                </div>
+                <div class="historia__marcos" id="marco4">
+                    <h2 class="historia__titlemarcos">1937</h2>
+                    <p class="historia__pmarcos">Claude Shannon se baseou na Álgebra Booleana para criar o
+                        computador
+                        digital e o projeto de
+                        circuito digital, que foi usado na IBM anos depois.</p>
+                </div>
+
+            </div>
         </section>
         <section class="conversao"></section>
         <section class="operacoes"></section>
@@ -18,4 +70,5 @@
     </main>
     <footer></footer>
 </body>
+
 </html>
