@@ -25,3 +25,22 @@ color: var(--dark-blue);
 background-color: var(--white);
 font-family: var(--font-title);
 */
+
+.operacoes{
+    padding: 5% 10% 34%;
+    background-color: var(--middle-blue);
+}
+
+.operacoes__title{
+    font-family: var(--font-title);
+    color: var(--white);
+    text-align: center;
+    font-size:40px;
+}
+
+.operacoes__texto{
+    font-family: var(--font-subtitle);
+    color:var(--white);
+    text-align: center;
+    padding: 3.5%;
+}
