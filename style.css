@@ -53,14 +53,18 @@ font-family: var(--font-title);
     border-top: 15px solid transparent;
     font-family: var(--font-subtitle);
     color: #90A3BF;
-    transition: background-color 0.3s;
     border-bottom: 35px solid transparent;
     font-size: 22px;
 }
 
+.operacoes__lista li {
+    width: calc(22% - 10 px);
+    margin-right: 10px;
+}
+
 li:hover {
     cursor: pointer;
-    color: #FEFEFE;
+    color: var(--white);
   }
 
 .operacoes__linha {
@@ -72,11 +76,11 @@ li:hover {
 
 .operacoes__imagens {
     border-top: 80px solid transparent;
-    display: flex; /* Cria um contêiner flexível */
-    justify-content: space-between; /* Distribui igualmente os itens ao longo do eixo principal */
+    display: flex; 
+    justify-content: space-between;
   }
   
 .operacoes__imagens img {
-    width: calc(22% - 10px); /* Define a largura das imagens (25% da largura do contêiner menos a margem entre elas) */
+    width: calc(22% - 10px);
     margin-right: 10px;
 }
