@@ -58,8 +58,8 @@ font-family: var(--font-title);
 }
 
 .operacoes__lista li {
-    width: calc(22% - 10 px);
-    margin-right: 10px;
+    width: calc(22% - 10px); 
+    text-align: center;
 }
 
 li:hover {
@@ -82,5 +82,4 @@ li:hover {
   
 .operacoes__imagens img {
     width: calc(22% - 10px);
-    margin-right: 10px;
 }
