@@ -27,7 +27,7 @@ font-family: var(--font-title);
 */
 
 .operacoes{
-    padding: 5% 10% 34%;
+    padding: 5% 10% 20%;
     background-color: var(--middle-blue);
 }
 
@@ -35,12 +35,48 @@ font-family: var(--font-title);
     font-family: var(--font-title);
     color: var(--white);
     text-align: center;
-    font-size:40px;
+    font-size: 40px;
 }
 
 .operacoes__texto{
     font-family: var(--font-subtitle);
     color:var(--white);
     text-align: center;
-    padding: 3.5%;
+    padding: 3.6%;
+    font-size: 20px;
+}
+
+.operacoes__lista{
+    list-style: none;
+    display: flex; 
+    justify-content: space-between; 
+    border-top: 15px solid transparent;
+    font-family: var(--font-subtitle);
+    color: #90A3BF;
+    transition: background-color 0.3s;
+    border-bottom: 35px solid transparent;
+    font-size: 22px;
+}
+
+li:hover {
+    cursor: pointer;
+    color: #FEFEFE;
+  }
+
+.operacoes__linha {
+    border: none; 
+    height: 1px; 
+    width: 100%;
+    background-color: #90A3BF; 
+  }
+
+.operacoes__imagens {
+    border-top: 80px solid transparent;
+    display: flex; /* Cria um contêiner flexível */
+    justify-content: space-between; /* Distribui igualmente os itens ao longo do eixo principal */
+  }
+  
+.operacoes__imagens img {
+    width: calc(22% - 10px); /* Define a largura das imagens (25% da largura do contêiner menos a margem entre elas) */
+    margin-right: 10px;
 }
