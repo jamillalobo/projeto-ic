@@ -9,6 +9,43 @@
 body {
     box-sizing: border-box;
 }
+
+/* Header*/
+
+header {
+    background-color: var(--dark-blue);
+    width: 1440px;
+    height: 128px;
+}
+
+.logo {
+    padding: 13px 99px;
+}
+
+nav{
+    position: relative;
+    bottom: 80px;
+    margin-left: 45%;
+    display: inline;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--white);
+    font-family: var(--font-title);
+    font-weight: bold;
+    margin: 25px;
+}
+
+a:hover {
+    color: var(--white);
+    background-color: var(--light-blue);
+    border: 5px solid var(--light-blue);
+    border-radius: 40px;
+}
+
+/* Conversão */
+
 .conversao {
     padding: 5% 5%;
     background-color: white;
@@ -60,6 +97,7 @@ body {
 
 }
 
+/* História */
 
 .historia {
     padding: 5% 10%;
@@ -173,34 +211,63 @@ background-color: var(--white);
 font-family: var(--font-title);
 */
 
-header {
-    background-color: var(--dark-blue);
-    width: 1440px;
-    height: 128px;
+/* Operações */
+
+.operacoes{
+    padding: 5% 10% 20%;
+    background-color: var(--middle-blue);
 }
 
-.logo {
-    padding: 13px 99px;
-}
-
-nav{
-    position: relative;
-    bottom: 80px;
-    margin-left: 45%;
-    display: inline;
-    box-sizing: border-box;
-}
-
-a {
-    color: var(--white);
+.operacoes__title{
     font-family: var(--font-title);
-    font-weight: bold;
-    margin: 25px;
+    color: var(--white);
+    text-align: center;
+    font-size: 40px;
 }
 
-a:hover {
-    color: var(--white);
-    background-color: var(--light-blue);
-    border: 5px solid var(--light-blue);
-    border-radius: 40px;
+.operacoes__texto{
+    font-family: var(--font-subtitle);
+    color:var(--white);
+    text-align: center;
+    padding: 3.6%;
+    font-size: 20px;
 }
+
+.operacoes__lista{
+    list-style: none;
+    display: flex; 
+    justify-content: space-between; 
+    border-top: 15px solid transparent;
+    font-family: var(--font-subtitle);
+    color: #90A3BF;
+    border-bottom: 30px solid transparent;
+    font-size: 22px;
+}
+
+.operacoes__lista li {
+    width: calc(22% - 10px); 
+    text-align: center;
+}
+
+.operacoes__lista li:hover {
+    cursor: pointer;
+    color: var(--white);
+  }
+
+.operacoes__linha {
+    border: none; 
+    height: 1px; 
+    width: 100%;
+    background-color: #90A3BF; 
+  }
+
+.operacoes__imagens {
+    border-top: 80px solid transparent;
+    display: flex; 
+    justify-content: space-between;
+  }
+  
+.operacoes__imagens img {
+    width: calc(22% - 10px);
+}
+
