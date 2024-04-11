@@ -205,6 +205,69 @@ a:hover {
     --font-subtitle: 'Source Code Pro', monospace;
 }
 
+.container {
+    width: 100%;
+    /*max-width: 1440px;*/
+    margin: auto;
+}
+
+main {
+    width: 100%;
+}
+
+section#integrantes {
+    height: 1000px;
+    max-height: 1000px;
+    background-color: var(--light-blue);
+    border: 0.5px solid var(--light-blue);
+}
+
+h1.integrantes__titulo {
+    margin-top: 74px;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font-title);
+}
+
+ul#integrantes__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    margin: auto;
+    margin-top: 52px;
+    list-style: none;
+    justify-content: center;
+}
+
+ul#integrantes__info li {
+    flex: 0 0 calc(20% - 20px);
+    text-align: center; 
+}
+
+
+img.integrantes__foto {
+    width: 250px;
+    height: 250px;
+}
+
+p.integrantes__nome {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: center;
+    color: var(--preto);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 38.4px;
+    font-family: var(--font-subtitle);
+}
+
+div.integrantes__social {
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+}
+
 /* pra usar as cores e fontes, faca assim:
 color: var(--dark-blue); 
 background-color: var(--white);
@@ -303,7 +366,7 @@ footer {
         padding: 3rem 2rem;
     }
 }
-/* Fim do Footer */
+
 /* Operações */
 
 .operacoes{
