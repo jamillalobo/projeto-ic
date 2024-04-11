@@ -7,13 +7,120 @@
     <link rel="stylesheet" href="style.css">
     <title>Footer</title>
 </head>
+<body class="container">
+    <header>
+        <div class="logo">
+            <img src="/assets/logo-nubi.png" alt="Logo do site" width="140px" height="102px" />
+        </div>
 
-<body>
-    <header></header>
+        <nav>
+            <a href="#historia">História</a>  
+            <a href="#conversao">Conversão</a>
+            <a href="#operacoes">Operações</a>
+            <a href="#integrantes">Quem somos</a>
+        </nav>
+    </header>
     <main>
-        <section class="historia"></section>
+        <section class="historia">
+
+            <h1 class="historia__title">Sistema Binário</h1>
+            <div class="historia__informacao">
+                <p class="historia__p">Sistema usado para linguagem de máquina. Se faz necessário usar código binário,
+                    que é composto por apenas
+                    dois números, 0 e 1, ele representa todos os caracteres, incluindo letras, caracteres especiais e
+                    números. Essa limitação numérica reflete a natureza binária dos computadores, que interpretam apenas
+                    a
+                    presença ou ausência de energia.</p>
+                <p class="historia__p">Para processar informações, os valores do código binário representam dados. Um
+                    único ou 1 é chamado de
+                    bit, a menor unidade de informação do computador. Um conjunto de 8 bits forma um byte, que é usado
+                    para
+                    armazenar e transmitir dados de maneira mais eficiente. Existem unidades maiores de armazenamento,
+                    como
+                    o kilobyte (KB), megabyte (MB), gigabyte (GB) e terabyte (TB), cada uma sendo um múltiplo de bytes.
+                </p>
+            </div>
+
+            <div class="historia__trilha">
+
+                <div class="historia__marcos" id="marco1">
+                    <h2 class="historia__titlemarcos">III A.C.</h2>
+                    <p class="historia__pmarcos">Pingalo descreveu um sistema numérico binário, representando os
+                        números
+                        de 1 a 8 apenas com os
+                        digitos 0 e 1.</p>
+                </div>
+                <div class="historia__marcos" id="marco2">
+                    <h2 class="historia__titlemarcos">Século XVIII</h2>
+                    <p class="historia__pmarcos">O sistema numérico binário moderno foi documentado pela primeira
+                        vez
+                        por Gottfried Leibniz.</p>
+                </div>
+                <div class="historia__marcos" id="marco1">
+                    <h2 class="historia__titlemarcos">1854</h2>
+                    <p class="historia__pmarcos">George Boole criou a Álgebra Booleana, que processa sinais usando
+                        e matemática, crucial na
+                        aplicação do sistema binário em circuitos eletrônicos.</p>
+                </div>
+                <div class="historia__marcos" id="marco2">
+                    <h2 class="historia__titlemarcos">1937</h2>
+                    <p class="historia__pmarcos">Claude Shannon se baseou na Álgebra Booleana para criar o
+                        computador
+                        digital e o projeto de
+                        circuito digital, que foi usado na IBM anos depois.</p>
+                </div>
+                <img class="historia__trilha__tracejado" src="./assets/trilha_historia.png" alt="">
+            </div>
+        </section>
+        <section class="conversao">
+                        <h1 class="conversao__title">Conversão</h1>
+            <div class="conversao__informacao">
+                <div class="conversao__esquerda">
+                <h2 class="conversao__minititle">Decimal para Binário</h2>
+                <br>
+                <p class="conversao__p">A conversão de decimal para binário (ou seja da base 10 para a base 2),
+                     consiste em dividir progressivamente o valor decimal por 2, obtendo-se um resultado e um
+                      resto. O resto em cada iteração terá sempre o valor de 0 ou 1. Deve-se dividir o número
+                       até que o quociente da divisão seja igual a zero.</p>
+                       <br>
+                       <br>
+                       <br>
+                       <img src="assets/image_conversao1.png" alt="Descrição da conta feita para conversão de valores decimais para binários" class="conversao__imagem">
+                       <img>
+                    </div>
+                    <div class="conversao__direita">
+               <h2 class="conversao__minititle">Binário para Decimal</h2>
+               <br>
+                <p class="conversao__p">Para transformar o número binário em decimal (ou seja da base 2
+                     para a base 10), você precisa multiplicar cada bit pela potência de sua posição e
+                      somar os resultados. Depois disso, basta fazer a soma dos fatores e confirmar o seu
+                       valor decimal.</p>
+                       <br>
+                       <br>
+                       <br>
+                       <img src="assets/image_conversao2.png" alt="Descrição da conta feita para conversão de valores decimais para binários" class="conversao__imagem">
+                       <img>
+            </div>
+            </div>
+        </section>
         <section class="conversao"></section>
-        <section class="operacoes"></section>
+        <section class="operacoes">
+            <h1 class="operacoes__title">OPERAÇÕES EM BINÁRIO</h1>
+            <p class="operacoes__texto">As operações em binário são similares às operações em decimal, porém utilizam apenas os dígitos 0 e 1.</p>
+                <ul class="operacoes__lista">
+                    <li>Adição</li>
+                    <li>Subtração</li>
+                    <li>Multiplicação</li>
+                    <li>Divisão</li>
+                </ul>
+              <hr class="operacoes__linha">
+              <div class="operacoes__imagens">
+                <img src="assets/image_adicao.png" alt="Adição de Número Binários">
+                <img src="assets/image_substracao.png" alt="Subtração de Números Binários">
+                <img src="assets/image_multiplicacao.png" alt="Multiplicação de Números Binários">
+                <img src="assets/image_divisao.png" alt="Divisão de Números Binários">
+              </div>
+        </section>
         <section class="integrantes"></section>
     </main>
     <footer>
