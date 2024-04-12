@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --dark-blue: #00171F;
+    --middle-blue: #003459;
+    --light-blue: #00A8E8;
+    --white: #FEFEFE;
+
+    --font-title: 'Encode Sans Expanded', sans-serif;
+    --font-subtitle: 'Source Code Pro', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    height: auto;
+}
+
+main {
+    width: 100%;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer-content {
+    padding: 4% 5%;
+    background-color: var(--dark-blue);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    font-family: var(--font-subtitle);
+    color: var(--white);
+}
+
+#footer-contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#footer-contatos h1 {
+    margin-bottom: 0, 75rem;
+}
+
+#footer-social {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer-social .footer-link {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--white);
+    transition: all 0.5s;
+}
+
+#footer-social .footer-link :hover{
+    opacity: 0.6;
+}
+
+#footer-social .footer-link img{
+    font-size: 1,25 rem;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    gap: 1rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: var(--white);
+}
+
+.footer-list h3{
+    color: var(--light-blue);
+    font-family: var(--font-title);
+}
+
+#footer-direitos{
+    display: flex;
+    justify-content: center;
+    background-color: var(--middle-blue);
+    font-size: 0.9;
+    padding: 1rem;
+    font-weight: 100;
+    color: var(--white);
+    font-family: var(--font-subtitle);
+}
+
+#footer-linkC{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--font-subtitle);
+}
+
+@media screen and (max-width: 768px){
+    #footer-content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #footer-content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}

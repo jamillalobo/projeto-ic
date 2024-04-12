@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --dark-blue: #00171F;
+    --middle-blue: #003459;
+    --light-blue: #00A8E8;
+    --white: #FEFEFE;
+
+    --font-title: 'Encode Sans Expanded', sans-serif;
+    --font-subtitle: 'Source Code Pro', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    height: auto;
+}
+
+main {
+    width: 100%;
+}
+
+section#integrantes {
+    height: auto;
+    padding: 2% 5% 7%;
+    background-color: var(--light-blue);
+    border: 0.5px solid var(--light-blue);
+}
+
+h1.integrantes__titulo {
+    margin-top: 50px;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font-title);
+}
+
+ul#integrantes__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    margin: auto;
+    margin-top: 52px;
+    list-style: none;
+    justify-content: center;
+}
+
+ul#integrantes__info li {
+    flex: 0 0 calc(20% - 20px);
+    text-align: center; 
+}
+
+img.integrantes__foto {
+    width: 250px;
+    height: 250px;
+}
+
+p.integrantes__nome {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: center;
+    color: var(--preto);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 38.4px;
+    font-family: var(--font-subtitle);
+}
+
+div.integrantes__social {
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+}
+
+#integrantes__info .integrantes__social :hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
