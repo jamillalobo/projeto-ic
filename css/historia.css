@@ -35,7 +35,7 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 5vw;
-    margin: 5vh 0;
+    margin: 5vh 0 7vh;
 }
 
 .historia__title {
