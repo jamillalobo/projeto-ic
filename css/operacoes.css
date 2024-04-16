@@ -6,6 +6,7 @@
     --middle-blue: #003459;
     --light-blue: #00A8E8;
     --white: #FEFEFE;
+    --off-blue: #90A3BF;
 
     --font-title: 'Encode Sans Expanded', sans-serif;
     --font-subtitle: 'Source Code Pro', monospace;
@@ -51,7 +52,7 @@ main {
     justify-content: space-between; 
     border-top: 15px solid transparent;
     font-family: var(--font-subtitle);
-    color: #90A3BF;
+    color: var(--off-blue);
     border-bottom: 30px solid transparent;
     font-size: 22px;
 }

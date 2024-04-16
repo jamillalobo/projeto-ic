@@ -28,6 +28,7 @@ main {
 header {
     background-color: var(--dark-blue);
     height: 120px;
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
