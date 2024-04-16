@@ -73,5 +73,37 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 70%;
 
+}
+
+@media (max-width: 750px) {
+    .conversao__informacao {
+        display: block;
+    }
+
+    .conversao__esquerda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .conversao__direita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conversao__title {
+        font-size: 30px;
+    }
+
+    .conversao__p {
+        font-size: 16px;
+    }
+
+    .conversao__imagem {
+        width: 90%;
+    }	
 }
