@@ -8,20 +8,23 @@
     <title>Sistemas Binarios</title>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 </head>
+
 <body class="container">
     <header>
         <div class="logo">
             <img src="/assets/logo-nubi.png" alt="Logo do site" />
         </div>
         <nav>
-            <a href="#historia">História</a>  
+            <a href="#historia">História</a>
             <a href="#conversao">Conversão</a>
             <a href="#operacoes">Operações</a>
+            <a href="#">Calculadora</a>
             <a href="#integrantes">Quem somos</a>
         </nav>
     </header>
     <main>
-        <section class="historia">
+
+        <section id="historia" class="historia">
 
             <h1 class="historia__title">Sistema Binário</h1>
             <div class="historia__informacao">
@@ -72,74 +75,82 @@
                 <img class="historia__trilha__tracejado" src="./assets/trilha_historia.png" alt="">
             </div>
         </section>
-        <section class="conversao">
-                        <h1 class="conversao__title">Conversão</h1>
+
+        <section id="conversao" class="conversao">
+            <h1 class="conversao__title">Conversão</h1>
             <div class="conversao__informacao">
                 <div class="conversao__esquerda">
-                <h2 class="conversao__minititle">Decimal para Binário</h2>
-                <br>
-                <p class="conversao__p">A conversão de decimal para binário (ou seja da base 10 para a base 2),
-                     consiste em dividir progressivamente o valor decimal por 2, obtendo-se um resultado e um
-                      resto. O resto em cada iteração terá sempre o valor de 0 ou 1. Deve-se dividir o número
-                       até que o quociente da divisão seja igual a zero.</p>
-                       <br>
-                       <br>
-                       <br>
-                       <img src="assets/image_conversao1.png" alt="Descrição da conta feita para conversão de valores decimais para binários" class="conversao__imagem">
-                       <img>
-                    </div>
-                    <div class="conversao__direita">
-               <h2 class="conversao__minititle">Binário para Decimal</h2>
-               <br>
-                <p class="conversao__p">Para transformar o número binário em decimal (ou seja da base 2
-                     para a base 10), você precisa multiplicar cada bit pela potência de sua posição e
-                      somar os resultados. Depois disso, basta fazer a soma dos fatores e confirmar o seu
-                       valor decimal.</p>
-                       <br>
-                       <br>
-                       <br>
-                       <img src="assets/image_conversao2.png" alt="Descrição da conta feita para conversão de valores decimais para binários" class="conversao__imagem">
-                       <img>
-            </div>
+                    <h2 class="conversao__minititle">Decimal para Binário</h2>
+                    <br>
+                    <p class="conversao__p">A conversão de decimal para binário (ou seja da base 10 para a base 2),
+                        consiste em dividir progressivamente o valor decimal por 2, obtendo-se um resultado e um
+                        resto. O resto em cada iteração terá sempre o valor de 0 ou 1. Deve-se dividir o número
+                        até que o quociente da divisão seja igual a zero.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="assets/image_conversao1.png"
+                        alt="Descrição da conta feita para conversão de valores decimais para binários"
+                        class="conversao__imagem">
+                    <img>
+                </div>
+                <div class="conversao__direita">
+                    <h2 class="conversao__minititle">Binário para Decimal</h2>
+                    <br>
+                    <p class="conversao__p">Para transformar o número binário em decimal (ou seja da base 2
+                        para a base 10), você precisa multiplicar cada bit pela potência de sua posição e
+                        somar os resultados. Depois disso, basta fazer a soma dos fatores e confirmar o seu
+                        valor decimal.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="assets/image_conversao2.png"
+                        alt="Descrição da conta feita para conversão de valores decimais para binários"
+                        class="conversao__imagem">
+                    <img>
+                </div>
             </div>
         </section>
-        <section class="conversao"></section>
-        <section class="operacoes">
+
+        <section id="operacoes" class="operacoes">
             <h1 class="operacoes__title">OPERAÇÕES EM BINÁRIO</h1>
-            <p class="operacoes__texto">As operações em binário são similares às operações em decimal, porém utilizam apenas os dígitos 0 e 1.</p>
-                <ul class="operacoes__lista">
-                    <li>Adição</li>
-                    <li>Subtração</li>
-                    <li>Multiplicação</li>
-                    <li>Divisão</li>
-                </ul>
-              <hr class="operacoes__linha">
-              <div class="operacoes__imagens">
+            <p class="operacoes__texto">As operações em binário são similares às operações em decimal, porém utilizam
+                apenas os dígitos 0 e 1.</p>
+            <ul class="operacoes__lista">
+                <li>Adição</li>
+                <li>Subtração</li>
+                <li>Multiplicação</li>
+                <li>Divisão</li>
+            </ul>
+            <hr class="operacoes__linha">
+            <div class="operacoes__imagens">
                 <img src="assets/image_adicao.png" alt="Adição de Número Binários">
                 <img src="assets/image_substracao.png" alt="Subtração de Números Binários">
                 <img src="assets/image_multiplicacao.png" alt="Multiplicação de Números Binários">
                 <img src="assets/image_divisao.png" alt="Divisão de Números Binários">
-              </div>
+            </div>
         </section>
+
         <section id="integrantes">
-                    
             <h1 class="integrantes__titulo">Quem somos</h1>
-            
             <ul id="integrantes__info">
                 <li>
                     <img class="integrantes__foto" src="assets/perfil_arthur.png" alt="">
                     <p class="integrantes__nome">Arthur Oliveira</p>
 
                     <div class="integrantes__social">
-                        <a href="https://www.instagram.com/artrodoliv?igsh=amlrOWswN3B0YnN4" target="_blank"><img src="assets/logo_instagram.png" alt="instagram de Arthur"></a>
-                        <a href="https://github.com/wiithesecond" target="_blank"><img src="assets/logo_github.png" alt="GitHub de Arthur"></a>
-                        <a href="https://www.linkedin.com/in/arthur-oliveira-3b5812303/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="assets/logo_linkedin.png" alt="LinkedIn de Arthur"></a>
+                        <a href="https://www.instagram.com/artrodoliv?igsh=amlrOWswN3B0YnN4" target="_blank"><img
+                                src="assets/logo_instagram.png" alt="instagram de Arthur"></a>
+                        <a href="https://github.com/wiithesecond" target="_blank"><img src="assets/logo_github.png"
+                                alt="GitHub de Arthur"></a>
+                        <a href="https://www.linkedin.com/in/arthur-oliveira-3b5812303/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank"><img src="assets/logo_linkedin.png" alt="LinkedIn de Arthur"></a>
                     </div>
                 </li>
 
                 <li>
                     <img class="integrantes__foto" src="assets/perfil_caua.png" alt="">
-                    <p class="integrantes__nome">Cauã Jordão</p>   
+                    <p class="integrantes__nome">Cauã Jordão</p>
 
                     <div class="integrantes__social">
                         <img src="assets/logo_instagram.png" alt="instagram de Cauã">
@@ -153,9 +164,12 @@
                     <p class="integrantes__nome">Jamilla Lobo</p>
 
                     <div class="integrantes__social">
-                        <a href="https://www.instagram.com/jamilla.sl/" target="_blank"><img src="assets/logo_instagram.png" alt="instagram de Jamilla"></a>
-                        <a href="https://github.com/jamillalobo" target="_blank"><img src="assets/logo_github.png" alt="GitHub de Jamilla"></a>
-                        <a href="https://www.linkedin.com/in/jamilla-lobo/" target="_blank"><img src="assets/logo_linkedin.png" alt="LinkedIn de Jamilla"></a>
+                        <a href="https://www.instagram.com/jamilla.sl/" target="_blank"><img
+                                src="assets/logo_instagram.png" alt="instagram de Jamilla"></a>
+                        <a href="https://github.com/jamillalobo" target="_blank"><img src="assets/logo_github.png"
+                                alt="GitHub de Jamilla"></a>
+                        <a href="https://www.linkedin.com/in/jamilla-lobo/" target="_blank"><img
+                                src="assets/logo_linkedin.png" alt="LinkedIn de Jamilla"></a>
                     </div>
                 </li>
 
@@ -164,9 +178,12 @@
                     <p class="integrantes__nome">Isabela Karla</p>
 
                     <div class="integrantes__social">
-                        <a href="https://www.instagram.com/isabelakarla__/" target="_blank"><img src="assets/logo_instagram.png" alt="instagram de Isabela"></a>
-                        <a href="https://github.com/isabelakarla" target="_blank"><img src="assets/logo_github.png" alt="GitHub de Isabela"></a>
-                        <a href="https://www.linkedin.com/in/isabela-karla-674ab929b/" target="_blank"><img src="assets/logo_linkedin.png" alt="LinkedIn de Isabela"></a>
+                        <a href="https://www.instagram.com/isabelakarla__/" target="_blank"><img
+                                src="assets/logo_instagram.png" alt="instagram de Isabela"></a>
+                        <a href="https://github.com/isabelakarla" target="_blank"><img src="assets/logo_github.png"
+                                alt="GitHub de Isabela"></a>
+                        <a href="https://www.linkedin.com/in/isabela-karla-674ab929b/" target="_blank"><img
+                                src="assets/logo_linkedin.png" alt="LinkedIn de Isabela"></a>
                     </div>
                 </li>
 
@@ -175,7 +192,8 @@
                     <p class="integrantes__nome">Lucas Deodato</p>
 
                     <div class="integrantes__social">
-                        <a href="https://www.instagram.com/l_deodato01/" target="_blank"><img src="assets/logo_instagram.png" alt="instagram de Lucas"></a>
+                        <a href="https://www.instagram.com/l_deodato01/" target="_blank"><img
+                                src="assets/logo_instagram.png" alt="instagram de Lucas"></a>
                         <img src="assets/logo_github.png" alt="GitHub de Lucas">
                         <img src="assets/logo_linkedin.png" alt="LinkedIn de Lucas">
                     </div>
@@ -184,11 +202,14 @@
                 <li>
                     <img class="integrantes__foto" src="assets/perfil_luis.png" alt="">
                     <p class="integrantes__nome">Luis Facunde</p>
-                    
+
                     <div class="integrantes__social">
-                        <a href="https://www.instagram.com/luis.facunde/" target="_blank"><img src="assets/logo_instagram.png" alt="instagram de Luis"></a>
-                        <a href="https://github.com/LuisFacunde" target="_blank"><img src="assets/logo_github.png" alt="GitHub de Luis"></a>
-                        <a href="https://www.linkedin.com/in/luis-facunde-18463127a/" target="_blank"><img src="assets/logo_linkedin.png" alt="LinkedIn de Luis"></a>
+                        <a href="https://www.instagram.com/luis.facunde/" target="_blank"><img
+                                src="assets/logo_instagram.png" alt="instagram de Luis"></a>
+                        <a href="https://github.com/LuisFacunde" target="_blank"><img src="assets/logo_github.png"
+                                alt="GitHub de Luis"></a>
+                        <a href="https://www.linkedin.com/in/luis-facunde-18463127a/" target="_blank"><img
+                                src="assets/logo_linkedin.png" alt="LinkedIn de Luis"></a>
                     </div>
                 </li>
 
@@ -197,9 +218,12 @@
                     <p class="integrantes__nome">Milo Moreira</p>
 
                     <div class="integrantes__social">
-                        <a href="https://www.instagram.com/milomorec/" target="_blank"><img src="assets/logo_instagram.png" alt="instagram de Milo"></a>
-                        <a href="https://github.com/DuMilo" target="_blank"><img src="assets/logo_github.png" alt="GitHub de Milo"></a>
-                        <a href="https://www.linkedin.com/in/milo-moreira-a28794265/" target="_blank"><img src="assets/logo_linkedin.png" alt="LinkedIn de Milo"></a>
+                        <a href="https://www.instagram.com/milomorec/" target="_blank"><img
+                                src="assets/logo_instagram.png" alt="instagram de Milo"></a>
+                        <a href="https://github.com/DuMilo" target="_blank"><img src="assets/logo_github.png"
+                                alt="GitHub de Milo"></a>
+                        <a href="https://www.linkedin.com/in/milo-moreira-a28794265/" target="_blank"><img
+                                src="assets/logo_linkedin.png" alt="LinkedIn de Milo"></a>
                     </div>
                 </li>
 
@@ -208,9 +232,12 @@
                     <p class="integrantes__nome">Sofia Travassos</p>
 
                     <div class="integrantes__social">
-                        <a href="https://www.instagram.com/sollfiaa/" target="_blank"><img src="assets/logo_instagram.png" alt="instagram de Sofia"></a>
-                        <a href="https://github.com/Acel0risxs" target="_blank"><img src="assets/logo_github.png" alt="GitHub de Sofia"></a>
-                        <a href="https://www.linkedin.com/in/sofia-travassos-539065300/" target="_blank"><img src="assets/logo_linkedin.png" alt="LinkedIn de Sofia"></a>
+                        <a href="https://www.instagram.com/sollfiaa/" target="_blank"><img
+                                src="assets/logo_instagram.png" alt="instagram de Sofia"></a>
+                        <a href="https://github.com/Acel0risxs" target="_blank"><img src="assets/logo_github.png"
+                                alt="GitHub de Sofia"></a>
+                        <a href="https://www.linkedin.com/in/sofia-travassos-539065300/" target="_blank"><img
+                                src="assets/logo_linkedin.png" alt="LinkedIn de Sofia"></a>
                     </div>
                 </li>
             </ul>
@@ -219,7 +246,7 @@
     <footer>
         <div id="footer-content">
             <div id="footer-contatos">
-                <h1><img src="assets/logo-nubi.png" alt="nubi números binários"></h1>
+                <h1><a href="/index.html"><img src="assets/logo-nubi.png" alt="nubi números binários"></a></h1>
                 <p>O Universo é binário e sinérgico</p>
 
                 <div id="footer-social">
@@ -234,7 +261,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <span></span>
 
             <ul class="footer-list">
@@ -278,7 +305,9 @@
 
         <div id="footer-direitos">
             &#169
-            2024 Grupo 3 ADS. <a href="https://cesar.school/" id="footer-linkC" target="_blank">CESAR School</a>|Made with nubi <❤️/>
+            2024 Grupo 3 ADS. <a href="https://cesar.school/" id="footer-linkC" target="_blank">CESAR School</a>|Made
+            with nubi
+            <❤️ />
         </div>
         <div id="footer-elaboracao">
             Made with nubi.
