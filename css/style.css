@@ -48,6 +48,17 @@ nav a {
     text-decoration: none;
 }
 
+#header_calculadora {
+    color: #00A8E8;
+}
+
+#header_calculadora:hover {
+    color: var(--white);
+    background-color: var(--light-blue);
+    border: 5px solid var(--light-blue);
+    border-radius: 40px;
+}
+
 nav a:hover {
     color: var(--white);
     background-color: var(--light-blue);
