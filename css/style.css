@@ -49,7 +49,7 @@ nav a {
 }
 
 #header_calculadora {
-    color: #00A8E8;
+    color: var(--light-blue);
 }
 
 #header_calculadora:hover {
