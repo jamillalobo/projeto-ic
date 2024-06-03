@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --dark-blue: #00171F;
+    --dark-blue-hover: #00171F80;
+    --middle-blue: #003459;
+    --light-blue: #00A8E8;
+    --white: #FEFEFE;
+
+    --font-title: 'Encode Sans Expanded', sans-serif;
+    --font-subtitle: 'Source Code Pro', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+/* Header*/
+
+header {
+    background-color: var(--dark-blue);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.logo img {
+    width: 80%;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--white);
+    font-family: var(--font-title);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#header_voltar {
+    color: var(--light-blue);
+}
+
+#header_voltar:hover {
+    color: var(--white);
+    background-color: var(--light-blue);
+    border: 5px solid var(--light-blue);
+    border-radius: 40px;
+}
+
+nav a:hover {
+    color: var(--white);
+    background-color: var(--light-blue);
+    border: 5px solid var(--light-blue);
+    border-radius: 40px;
+}
+
+/* Calculator */
+
+.calculadora_title {
+    font-family: var(--font-title);
+    color: var(--middle-blue);
+    font-weight: 800;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+    
+.input_calculadora{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    
+.conversao_binario {
+    background-color: var(--light-blue);
+    width: 529px;
+    height: 274px;
+    top: 237px;
+    left: 134px;
+    margin: 12px;
+    padding: 27px 324px 209px 27px;
+    gap: 0px;
+    border-radius: 14px;
+    opacity: 0px; 
+}
+#input-binario {
+    color: var(--white);
+    font-family: var(--font-title);
+    font-size: 20px;
+    width: fit-content;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: .5rem 0;
+    border: none;
+    background-color: var(--light-blue);  
+}
+
+#input-binario::placeholder {
+    color: var(--middle-blue);
+}
+
+#input-binario:focus::placeholder {
+    color: var(--light-blue); 
+}
+
+.container_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+
+.botao__bin__dec {
+    width: 60%;
+    height: 50px;
+    background-color: var(--middle-blue);
+    color: var(--white);
+    font-family: var(--font-title);
+    font-size: 1rem;
+    border: 5px solid var(--middle-blue);
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao__bin__dec:hover {
+    background-color: var(--light-blue);
+}
+
+.botao__dec__bin {
+    width: 60%;
+    height: 50px;
+    background-color: var(--white);
+    color: var(--middle-blue);
+    font-family: var(--font-title);
+    font-size: 1rem;
+    border: 5px solid var(--middle-blue);
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao__dec__bin:hover {
+    background-color: var(--light-blue);
+}
+
+.conversao_decimal{
+    background-color: var(--white);
+    border: 12px solid var(--dark-blue);
+    width: 529px;
+    height: 440px;
+    top: 237px;
+    left: 788px;
+    margin: 12px;
+    border-radius: 14px; 
+    display: flex;
+    justify-content: center;
+}
+
+.conversao_decimal_paragrafo{
+    text-align: center;
+    color: var(--dark-blue);
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: .5rem 0;
+    border: none; 
+}
+
+/* Footer */
+
+* {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+

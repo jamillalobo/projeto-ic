@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --dark-blue: #00171F;
+    --middle-blue: #003459;
+    --light-blue: #00A8E8;
+    --white: #FEFEFE;
+
+    --font-title: 'Encode Sans Expanded', sans-serif;
+    --font-subtitle: 'Source Code Pro', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    height: auto;
+}
+
+main {
+    width: 100%;
+}
+
+#conversao {
+    padding: 5% 5%;
+    background-color: white;
+}
+
+.conversao__informacao {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    margin: 5vh 0;
+}
+
+.conversao__title {
+        
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 40px;
+    font-weight: 60px;
+    text-transform: uppercase;
+    color: var(--middle-blue);
+    font-weight: 700;
+}
+
+.conversao__minititle {
+    font-family: var(--font-title);
+    color: var(--middle-blue);
+    text-align: center;
+    font-weight: 600;
+}
+
+.conversao__p {
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: var(--dark-blue);
+    height: auto;
+    text-align: justify;
+    font-family: var(--font-subtitle);
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 70vw;
+    opacity: 100%;   
+    font-weight: 400;
+}
+
+.conversao__imagem {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+}
+
+@media (max-width: 750px) {
+    .conversao__informacao {
+        display: block;
+    }
+
+    .conversao__esquerda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .conversao__direita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conversao__title {
+        font-size: 30px;
+    }
+
+    .conversao__p {
+        font-size: 16px;
+    }
+
+    .conversao__imagem {
+        width: 90%;
+    }	
+}

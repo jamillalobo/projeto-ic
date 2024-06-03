@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de número binários</title>
-    <link rel="stylesheet" href="css/styleCalculator.css">
+    <link rel="stylesheet" href="css/calculator.css">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 </head>
 
@@ -18,83 +18,22 @@
             <a href="index.html" id="header_voltar">Voltar</a>
     </header>
 
-    <main>
-        <p>Reachin' out on my way home
-        <p>You can be so cold, I'll try again</p>
-        <p>You make me sad and second-guess myself</p>
-        <p>You can be so cold, Midwest Indigo</p>
-    </main>
-
-    <footer>
-        <div id="footer-content">
-            <div id="footer-contatos">
-                <h1><a href="/index.html"><img src="assets/logo-nubi.png" alt="nubi números binários"></a></h1>
-                <p>O Universo é binário e sinérgico</p>
-
-                <div id="footer-social">
-                    <a href="#" class="footer-link" id="facebook">
-                        <img src="assets/footer_facebook.png" alt="facebook do nubi">
-                    </a>
-                    <a href="#" class="footer-link" id="twitter">
-                        <img src="assets/footer_twitter.png" alt="twitter/X do nubi">
-                    </a>
-                    <a href="#" class="footer-link" id="instagram">
-                        <img src="assets/footer_instagram.png" alt="instagram do nubi">
-                    </a>
-                </div>
+    <main class="calculadora">
+        <h1 class="calculadora_title">Calculadora de Binário</h1>
+        <div class="input_calculadora">
+            <div class="container_input">
+                <div class="conversao_binario">
+                    <input placeholder="Digite seu número" type="number" name="binário" id="input-binario" />
+                </div> 
+                <button onclick=bin2dec() class="botao__bin__dec">Binario para decimal</button>
+                <button onclick=dec2bin() class="botao__dec__bin">Decimal para binario</button>
             </div>
-
-            <span></span>
-
-            <ul class="footer-list">
-                <li>
-                    <h3>Sobre Nós</h3>
-                </li>
-                <li>
-                    <a href="https://github.com/jamillalobo/projeto-ic" class="footer-link" target="_blank">GitHub</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Como foi elaborado
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Brainstorm</a>
-                </li>
-                <li>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZ5MZOwY2UoLQGHJKJn_Mw5wO6dQ-O_IccwZgSOZTShr2K-g/viewform"
-                        class="footer-link" target="_blank">Feedback</a>
-                </li>
-            </ul>
-
-            <ul class="footer-list">
-                <li>
-                    <h3>Conteúdo adicional</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">YouTube</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Conversor</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Livros</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Sites</a>
-                </li>
-            </ul>
+            <div class="conversao_decimal">
+                <p class="conversao_decimal_paragrafo"></p>
+            </div>
         </div>
-
-        <div id="footer-direitos">
-            <p>&#169 2024 Grupo 3 ADS. <a href="https://cesar.school/" id="footer-linkC" target="_blank">CESAR
-                    School</a>|Made with nubi
-                <❤️ />
-            </p>
-        </div>
-        <div id="footer-elaboracao">
-            Made with nubi.
-        </div>
-    </footer>
+    </main>
+    <script src="index.js"></script>
 </body>
 
 </html>
