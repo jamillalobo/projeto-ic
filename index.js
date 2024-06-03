@@ -1,19 +1,11 @@
-/* Variáveis
-troquem o querySelector pra classe e id dos elementos html
-lembrem que: '#exemploId, '.exemploClasse', 'exemploTag'
-*/
-
-const botaoConverter = document.querySelector("#botaoConverter");
-const botaoTrocar = document.querySelector("#botaoTrocar");
-const input = document.querySelector("#input");
-const result = document.querySelector("#result");
-const titulo = document.querySelector("#titulo");
-const label = document.querySelector(".label");
+const botaoConverter = document.querySelector(".botao__bin__dec");
+const botaoTrocar = document.querySelector(".botao__dec__bin");
+const input = document.querySelector("#input-binario");
+const result = document.querySelector(".conversao_decimal_paragrafo");
 let isBin2Dec = true;
 
 //função de conversão binária para decimal
-
-const bin2dec = function () {
+function bin2dec() {
   const inputBinario = input.value;
   if (!/^[01]+$/.test(inputBinario)) {
     result.innerText =
@@ -22,11 +14,10 @@ const bin2dec = function () {
   }
   const decimalNumber = parseInt(inputBinario, 2);
   result.innerText = "Resultado: " + decimalNumber;
-};
+}
 
 //função de conversão decimal para binária
-
-const dec2bin = function () {
+function dec2bin() {
   const decimalInput = parseInt(input.value, 10);
   if (isNaN(decimalInput)) {
     result.innerText =
@@ -35,38 +26,4 @@ const dec2bin = function () {
   }
   const binaryNumber = decimalInput.toString(2);
   result.innerText = "Resultado: " + binaryNumber;
-};
-
-//função de troca de conversões
-
-const trocaConversao = function () {
-  if (isBin2Dec) {
-    titulo.innerText = "Calculadora Decimal para Binário";
-    input.value = "";
-    result.innerText = "Resultado: ";
-    input.placeholder = "Número Decimal";
-    botaoTrocar.innerText = "Mudar para Binário para Decimal";
-    label.innerText = "Número Decimal: ";
-    isBin2Dec = false;
-  } else {
-    titulo.innerText = "Calculadora Binário para Decimal";
-    input.value = "";
-    result.innerText = "Resultado: ";
-    input.placeholder = "Número Binário";
-    botaoTrocar.innerText = "Mudar para Decimal para Binário";
-    label.innerText = "Número Binário: ";
-    isBin2Dec = true;
-  }
-};
-
-//eventListeners
-
-botaoConverter.addEventListener("click", function () {
-  if (isBin2Dec) {
-    bin2dec();
-  } else {
-    dec2bin();
-  }
-});
-
-botaoTrocar.addEventListener("click", trocaConversao);
+}

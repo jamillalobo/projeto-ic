@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de número binários</title>
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+</head>
+
+<body class="container">
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./assets/logo-nubi.png" alt="Logo do site" /></a>
+        </div>
+        <nav>
+            <a href="index.html" id="header_voltar">Voltar</a>
+    </header>
+
+    <main class="calculadora">
+        <h1 class="calculadora_title">Calculadora de Binário</h1>
+        <div class="input_calculadora">
+            <div class="container_input">
+                <div class="conversao_binario">
+                    <input placeholder="Digite seu número" type="number" name="binário" id="input-binario" />
+                </div> 
+                <button onclick=bin2dec() class="botao__bin__dec">Binário para decimal</button>
+                <button onclick=dec2bin() class="botao__dec__bin">Decimal para binário</button>
+            </div>
+            <div class="conversao_decimal">
+                <p class="conversao_decimal_paragrafo"></p>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
