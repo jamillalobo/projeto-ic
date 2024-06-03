@@ -47,28 +47,18 @@ nav a {
     font-family: var(--font-title);
     font-weight: bold;
     text-decoration: none;
-}
-
-#header_voltar {
-    color: var(--light-blue);
-}
-
-#header_voltar:hover {
-    color: var(--white);
-    background-color: var(--light-blue);
-    border: 5px solid var(--light-blue);
+    padding: 3px 12px;
+    text-align: center;
+    border: 3px solid transparent; 
     border-radius: 40px;
 }
 
 nav a:hover {
     color: var(--white);
-    background-color: var(--light-blue);
-    border: 5px solid var(--light-blue);
-    border-radius: 40px;
+    border-color: var(--light-blue);
 }
 
 /* Calculator */
-
 .calculadora_title {
     font-family: var(--font-title);
     color: var(--middle-blue);
